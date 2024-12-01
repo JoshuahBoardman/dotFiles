@@ -1,0 +1,16 @@
+{{ if eq .chezmoi.os "linux" }}
+{{ end }}
+
+{{ if eq .chezmoi.os "darwin" }}
+./dot_i3/
+./dot_dmenurc.tmpl
+./dot_config/polybar/
+{{ end }}
+
+{{ if eq .chezmoi.os "windows" }}
+./dot_config/
+./dot_i3/
+./dot_tmux.conf.tmpl
+./dot_dmenurc.tmpl
+{{ end }}
+
