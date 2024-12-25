@@ -1,12 +1,12 @@
-{{- template "bashrc.tmpl" . {{ if eq .chezmoi.os "linux" }}
-linux-specific-file
+{{- template "bashrc.tmpl" .  -}}
+{{ if eq .chezmoi.os "linux" }}
+  #linux-specific-file
 {{ end }}
 
 {{ if eq .chezmoi.os "darwin" }}
-macos-specific-file
+  #macos-specific-file
 {{ end }}
 
 {{ if eq .chezmoi.os "windows" }}
-windows-specific-file
+  #windows-specific-file
 {{ end }}
--}}
